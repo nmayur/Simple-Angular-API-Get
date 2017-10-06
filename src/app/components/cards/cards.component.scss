@@ -1,0 +1,28 @@
+/*Cards Styles*/
+
+.cust_card {
+    border-radius: 4px;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.4);
+    transition: all 0.5s ease;
+}
+
+.cust_card:hover {
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.modal_link {
+    text-decoration: none;
+    color: #000;
+}
+
+.modal_link:hover,
+.modal_link:focus,
+.modal_link:active {
+    text-decoration: none;
+}

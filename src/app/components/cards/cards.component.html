@@ -1,0 +1,31 @@
+<div class="container mt-5 d-flex">
+    <div class="row d-flex align-items-stretch">
+        <div class="col-sm-3 col-12 my-4 d-flex" *ngFor="let image of images | slice:0:20" let i="index">
+            <a href="#" data-toggle="modal" class="d-flex modal_link" [attr.data-target]="'#' + image.id" style="width:100%;">
+                <div class="col p-0 cust_card">
+                    <img class="img-fluid" src="{{image.thumbnailUrl}}" width="100%" alt="Card image cap">
+                    <p class="card-title p-2">{{image.title}}</p>
+                </div>
+            </a>
+
+            <!-- Modal -->
+            <div class="modal fade" id="{{image.id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <p class="modal-title" id="exampleModalLabel">{{image.title}}</p>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                        </div>
+                        <div class="modal-body">
+                            <img class="img-fluid" src="{{image.url}}" width="100%" alt="Card image cap">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
