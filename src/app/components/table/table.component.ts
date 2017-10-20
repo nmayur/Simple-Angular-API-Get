@@ -13,9 +13,9 @@ export class TableComponent implements OnInit {
   constructor( private _postService: TableService) { }
   ngOnInit() {
     this.dtOptions = {
-      pagingType: 'full_numbers',
+      pagingType: 'numbers',
       searching: true,
-      pageLength: 10,
+      pageLength: 20,
       ordering: true
     };
 
